@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CH02 Mission01: 일일 지출내역 (삼향조건연산자 사용)</title>
+</head>
+<body>
+    <script>
+        // 지출한 돈 입력받기
+        var transport = prompt("오늘 지출한 교통비는?", "0");
+        var foodExpense = prompt("오늘 지출한 식비는?", "0");
+        var beverageExpense = prompt("오늘 지출한 음료비는?", "0");
+
+        // prompt로 입력받은 문자열을, 숫자로 바꿔주기
+        transport = Number(transport); 
+        foodExpense = Number(foodExpense);
+        beverageExpense = Number(beverageExpense);
+
+        // 각각 입력받은 금액 표시
+        document.write("교통비: ", transport, "<br>");
+        document.write("식비: ", foodExpense, "<br>");
+        document.write("음료비: ", beverageExpense, "<br><br>");
+
+        // 총 지출 표시
+        var totalExpenses = (transport + foodExpense + beverageExpense);
+        document.write("오늘 총 지출 금액: ", totalExpenses, "<br><br>");
+
+        // 초과 지출금액 표시
+        var overAmount = totalExpenses - 10000;
+ 
+        document.write("초과 지출한 금액은 ", overAmount, "원이므로, <br>");
+        var result2 = totalExpenses <= 10000 ? "돈 관리를 잘했다 <br>" : "하루 용돈에서 " + overAmount + "원 만큼 더 썼다 <br>";
+        document.write(result2);
+
+        //properAmount = properAmount ? "돈 관리를 잘했다" : "원을 초과해서 사용했다";
+        //document.write(properAmount);
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI Test</title>
+</head>
+<body>
+    <script>
+        var userHeight = prompt("Your Height?", "0");
+        var userWeight = prompt("Your Weight?", "0");
+      
+        var standardWeight = (userHeight - 100) * 0.9;
+        document.write ("Your standard weight is ", standardWeight, "kg, but your weight is ", userWeight, ". <br><br>");
+
+        var healthyWeight = userWeight >= standardWeight + 5 && userWeight <= standardWeight -5;
+        var overWeight = userWeight > standardWeight + 5;
+        var underWeight = userWeight < standardWeight - 5;
+
+        if (userWeight = healthyWeight) {
+            document.write ("You are healthy weight!");
+        } else if (userWeight = overWeight) {
+            document.write ("You are overweight.")
+        } else {
+            document.write ("You are underweight.");
+        }
+
+
+    </script>
+</body>
+</html>

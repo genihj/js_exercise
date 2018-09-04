@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1-3분기 정보
+        var firstQuater = 1200;
+        var secondQuater = 1300;
+        var thirdQuater = 1000;
+        document.write("1분기 판매량: ", firstQuater, "<br>");
+        document.write("2분기 판매량: ", secondQuater, "<br>");
+        document.write("3분기 판매량: ", thirdQuater, "<br><br>");
+
+
+        // 4분기 입력받은 후, 숫자로 치환
+        var fourthQuater = prompt("4분기 판매량은? ", "0");
+        fourthQuater = Number(fourthQuater);
+        document.write("4분기 판매량: ", fourthQuater, "<br><br>");
+
+        // 1-3분기 평균 판매량
+        var average = (firstQuater + secondQuater + thirdQuater) / 3;
+        document.write("1-3분기 평균 판매량: ", average, "<br><br>");
+
+        // 1-3분기 평균 판매량과 4분기 판매량 비교
+        var result = fourthQuater >= average ? "판매량이 평균 이상이다" : "판매량이 평균 미달이다";
+        document.write(result);
+
+
+
+
+    </script>
+</body>
+</html>
