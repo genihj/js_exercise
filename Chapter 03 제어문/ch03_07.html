@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var id = "test";
+        var pw = "test123";
+
+        var userId = prompt("니 아이디는?", "");
+        //var userPw = prompt("비번은?","");
+
+        if (id == userId) {
+            var userPw = prompt("비번은?","");
+            if (pw == userPw) {
+                document.write (userId + "님 어서와라");
+            } else {
+                //document.write (userId + "야 너 비밀번호 틀림");
+                alert ("니 비밀번호 틀림");
+                location.reload(); // 브라우저 새로 고침
+            }
+        } else {
+            alert ("니가 입력한 아이디 " + userId + "는 잘못된거임");
+            location.reload (); // 브라우저 새로고침
+        }
+    </script>
+</body>
+</html>

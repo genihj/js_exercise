@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i = 10;
+        var input = prompt("몇부터 출력할까?","0");
+
+        while (i <= input) {
+            if (input % 2 == 0) {
+                document.write ("<font color ='blue'>" + input + " is an even number</font></br>"); // 글씨색 파란색으로 출력
+            } else {
+                document.write ("<font color='red'>" + input + " is an odd number</font></br>"); // 글씨색 빨간색으로 출력 
+            }
+            input--;
+        }
+
+        document.write ("=== The End ===");
+    </script>
+</body>
+</html>

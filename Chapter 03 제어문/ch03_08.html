@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> // \를 쓸 경우 줄바꿈
+        var site = prompt("네이버, 다음, 네이트, 구글 중\
+        니가 좋아하는 사이트는?")
+        var url;
+
+        switch (site) {
+            case "네이버": url = "www.naver.com";
+                break;
+            case "다음": url = "www.daum.net";
+                break;
+            case "네이트" : url = "www.nate.com";
+                break;
+            case "구글" : url = "www.google.com";
+                break;
+            default: alert ("보기에서 골라라");
+        }
+
+        if (url) location.href = "http://" + url; // 저장된 주소로 이동
+    </script>
+</body>
+</html>
