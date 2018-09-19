@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for: 1~10까지 반복, break로 i가 6일 때 종료
+        for (i = 1; i <=10; i++) {
+            if (i == 6) { break; }
+            document.write(i + "<br>");
+            //if (i == 6) {break;} --> break이 포함된 if문을 여기에 넣을 경우, 6까지 출력되므로 FAIL
+        }
+        document.write("===The End===");
+    </script>    
+</body>
+</html>

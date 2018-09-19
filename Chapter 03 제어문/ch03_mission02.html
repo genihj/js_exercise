@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for: 5행 5열 표 만들고, 1부터 25까지 출력
+       /* < 내코드 >
+        var number = 1;
+        for (i = 0; i < 5; i++) {
+            document.write("---------------------------- <br>");
+            document.write(" | ");
+            for (j = 0; j < 5; j++){
+                document.write (number + " | ");
+                number++;
+            }
+            document.write("<br>");
+            //document.write("---------------------------- <br>");
+        }
+        document.write("---------------------------- <br>");
+        */
+
+        // < 책 코드 >
+        var num = 1;
+        var t = "<table border = 1>";
+        for (var i = 1; i <= 5; i++ ){
+            t += "<tr>";
+
+            for (var k = 1; k <= 5; k++ ) {
+                t += "<td>";
+                num++;
+                t += "</td>";
+            }
+
+            t += "</tr>";
+        }
+
+        t += "</table>"
+        console.log(t);
+        document.write(t);
+    </script>
+</body>
+</html>
